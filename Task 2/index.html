@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Maker</h1>
+        <div class="form-section">
+            <h2>Personal Information</h2>
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="email" placeholder="Email">
+            <textarea id="summary" placeholder="Professional Summary"></textarea>
+        </div>
+        <div class="form-section">
+            <h2>Skills</h2>
+            <textarea id="skills" placeholder="Enter your skills, separated by commas"></textarea>
+        </div>
+        <div class="form-section">
+            <h2>Education</h2>
+            <textarea id="education" placeholder="Enter your educational background"></textarea>
+        </div>
+        <div class="form-section">
+            <h2>Experience</h2>
+            <textarea id="experience" placeholder="Enter your work experience"></textarea>
+        </div>
+        <div class="form-section">
+            <h2>Projects</h2>
+            <textarea id="projects" placeholder="Enter your projects"></textarea>
+        </div>
+        <div class="form-section">
+            <h2>Certifications</h2>
+            <textarea id="certifications" placeholder="Enter your certifications"></textarea>
+        </div>
+        <div class="form-section">
+            <h2>Languages</h2>
+            <textarea id="languages" placeholder="Enter languages and proficiency"></textarea>
+        </div>
+        <div class="form-section">
+            <h2>References</h2>
+            <textarea id="references" placeholder="Enter references or state 'Available upon request'"></textarea>
+        </div>
+        <div class="form-section">
+            <h2>Template Choices</h2>
+            <select id="template">
+                <option value="template1">Template 1</option>
+                <option value="template2">Template 2</option>
+                <option value="template3">Template 3</option>
+            </select>
+        </div>
+        <div class="preview-section">
+            <h2>Live Preview</h2>
+            <div id="preview"></div>
+            <div id="formatSelection">
+                <label for="formatSelect">Select Format:</label>
+                <select id="formatSelect">
+                    <option value="pdf">PDF</option>
+                    <option value="docx">DOCX</option>
+                    <option value="txt">TXT</option>
+                </select>
+                <button onclick="downloadResume()">Download</button>
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
